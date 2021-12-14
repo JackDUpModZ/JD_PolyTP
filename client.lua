@@ -43,31 +43,30 @@ Citizen.CreateThread(function()
 					distance = 1.5
 				})
 		elseif Config.targetType == 'fivem-target' then
-				local pos = vector3(v.pos.x,v.pos.y,v.pos.z)
-				local name = k
-				local TPZones = {}
-				exports["fivem-target"]:AddTargetPoint({
-				name = name,
-				label = "Door",
-				icon = "fas fa-door-open",
-				point = pos,
-				interactDist = 2.5,
-				onInteract = enterMorgue,
-				options = {
-					{
-					name = "enter_morgue",
-					label = "Enter"
-					},           
-				},
-				vars = {
-					label = "Go To".." "..Config.TPZones[v.destination].label.."",
-					tp = v.destination,
-					destLabel = Config.TPZones[v.destination].label,
-					headingToTurnTo = v.pos.w
-				}
-				})
-				table.insert(TPZones,name)
-			end
+			local pos = vector3(v.pos.x,v.pos.y,v.pos.z)
+			local name = k
+			local TPZones = {}
+			exports["fivem-target"]:AddTargetPoint({
+			name = name,
+			label = "Door",
+			icon = "fas fa-door-open",
+			point = pos,
+			interactDist = 2.5,
+			onInteract = enterMorgue,
+			options = {
+				{
+				name = "enter_morgue",
+				label = "Enter"
+				},           
+			},
+			vars = {
+				label = "Go To".." "..Config.TPZones[v.destination].label.."",
+				tp = v.destination,
+				destLabel = Config.TPZones[v.destination].label,
+				headingToTurnTo = v.pos.w
+			}
+			})
+			table.insert(TPZones,name)
 		end
 	end
 end)
