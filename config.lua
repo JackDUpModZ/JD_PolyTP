@@ -1,5 +1,7 @@
 Config = {}
 
+Config.targetType = 'qtarget' -- qtarget , bt-target , fivem-target
+
 Config.TPZones = {
     ['ems_1'] = {
         label = "Pillbox Ground Floor",
