@@ -1,5 +1,3 @@
--- whitewingz
-
 fx_version 'adamant'
 version '1.0'
 lua54 'yes'
@@ -11,3 +9,7 @@ client_scripts {
 	'config.lua',
 	'client.lua',
 }
+
+-- PRODUCED BY JackDUpModZ 2021/2022 
+-- V1.0
+-- https://discord.gg/qvWktZPgnQ
