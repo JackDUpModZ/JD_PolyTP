@@ -1,3 +1,7 @@
+-- PRODUCED BY JackDUpModZ 2021/2022 
+-- V1.0
+-- https://discord.gg/qvWktZPgnQ
+
 --BUILD EVENTS--
 Citizen.CreateThread(function()
     for k,v in pairs(Config.TPZones) do
@@ -143,3 +147,7 @@ AddEventHandler('JD_PolyTP:TPLocation', function(data)
 		end
 	end
 end)
+
+-- PRODUCED BY JackDUpModZ 2021/2022 
+-- V1.0
+-- https://discord.gg/qvWktZPgnQ
